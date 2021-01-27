@@ -1,9 +1,11 @@
 <li>
 	{{burger_name}}
 
-	<button class="change-devoured" data-id="{{id}}" data-newdevour="{{devour}}">
-		{{#if devour}}Devoured!{{else}}Ready to Eat!{{/if}}
+	<button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}">
+		{{#if devour}}Devoured!{{else}}Eat It!{{/if}}
 	</button>
 
 	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
 </li>
+
+{{!-- Need to find way to have button disappear after eaten --}}
